@@ -1,0 +1,17 @@
+{
+    "infos_generales": {
+        "etablissement": "",
+        "classe": "",
+        "discipline": "",
+        "enseignant": "",
+        "trimestre": "1er",
+        "horaire": ""
+    },
+    "preambule": {
+        "titre_module": "",
+        "famille_situations": "",
+        "competence": "",
+        "titre_lecon": "",
+        "type": "Découverte"
+    }
+}
