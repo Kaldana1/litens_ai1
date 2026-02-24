@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="300">
+  <text x="20" y="280"
+        transform="rotate(-90 20 280)"
+        text-anchor="middle"
+        font-size="14"
+        font-family="Arial"
+        font-weight="bold">
+    Situation problème
+  </text>
+</svg>

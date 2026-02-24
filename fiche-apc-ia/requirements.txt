@@ -1,0 +1,5 @@
+streamlit
+fpdf
+jinja2
+weasyprint
+reportlab

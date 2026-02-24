@@ -1,0 +1,77 @@
+{
+    "infos_generales": {
+        "etablissement": "",
+        "classe": "",
+        "effectif": "",
+        "discipline": "",
+        "enseignant": "",
+        "lieu": "",
+        "trimestre": "",
+        "semaine": "",
+        "horaire": ""
+    },
+    "preambule": {
+        "numero_module": "",
+        "titre_module": "",
+        "famille_situations": "",
+        "unite_apprentissage": "",
+        "competence": "",
+        "numero_lecon": "",
+        "duree": "",
+        "titre_lecon": "",
+        "vocabulaire": "",
+        "objectif": "",
+        "actions_programme": "",
+        "materiel": "",
+        "demarches": ""
+    },
+    "situation_probleme": {
+        "methode_pedagogique": "",
+        "prerequis": "",
+        "mediagraphie": "",
+        "description": "",
+        "consignes": "",
+        "resultats_attendus": ""
+    },
+    "deroulement": [
+        {
+            "etape": "",
+            "duree": "",
+            "opi": "",
+            "taches_enseignant": "",
+            "taches_eleve": "",
+            "methodes": "",
+            "evaluation": "",
+            "ressources": "",
+            "observations": ""
+        },
+        {
+            "etape": "",
+            "duree": "",
+            "opi": "",
+            "taches_enseignant": "",
+            "taches_eleve": "",
+            "methodes": "",
+            "evaluation": "",
+            "ressources": "",
+            "observations": ""
+        },
+        {
+            "etape": "",
+            "duree": "",
+            "opi": "",
+            "taches_enseignant": "",
+            "taches_eleve": "",
+            "methodes": "",
+            "evaluation": "",
+            "ressources": "",
+            "observations": ""
+        }
+    ],
+    "cloture": {
+        "evaluation_application": "",
+        "evaluation_integration": "",
+        "evaluation_transfert": "",
+        "remediation": ""
+    }
+}

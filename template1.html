@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 1.5cm;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 10pt;
+        }
+
+        .date {
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .titre-principal {
+            background-color: #9a8f55;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            border: 1px solid black;
+            margin-bottom: 15px;
+        }
+
+        .section-titre {
+            font-weight: bold;
+            margin: 10px 0 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+            vertical-align: top;
+        }
+
+        .label {
+            font-weight: bold;
+            width: 25%;
+        }
+
+        .zone {
+            height: 25px;
+        }
+
+        .zone-large {
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- DATE -->
+    <div class="date">
+        <strong>Date :</strong> …… / …… / 20……
+    </div>
+
+    <!-- TITRE -->
+    <div class="titre-principal">
+        MODELE DE FICHE DE PREPARATION D’UNE UNITE D’ENSEIGNEMENT/APPRENTISSAGE<br>
+        INTEGRANT LE NUMERIQUE
+    </div>
+
+    <!-- 1. INFORMATIONS GENERALES -->
+    <div class="section-titre">1. Informations générales</div>
+
+    <table>
+        <tr>
+            <td class="label">Etablissement :</td>
+            <td colspan="3" class="zone">{{ infos_generales.etablissement }}</td>
+        </tr>
+        <tr>
+            <td class="label">Classe :</td>
+            <td class="zone">{{ infos_generales.classe }}</td>
+            <td class="label">Effectif :</td>
+            <td class="zone">{{ infos_generales.effectif }}</td>
+        </tr>
+        <tr>
+            <td class="label">Discipline :</td>
+            <td colspan="3" class="zone">{{ infos_generales.discipline }}</td>
+        </tr>
+        <tr>
+            <td class="label">Enseignant :</td>
+            <td colspan="3" class="zone">{{ infos_generales.enseignant }}</td>
+        </tr>
+        <tr>
+            <td class="label">Lieu de déroulement de la leçon :</td>
+            <td colspan="3" class="zone">{{ infos_generales.lieu }}</td>
+        </tr>
+        <tr>
+            <td class="label">Trimestre N° :</td>
+            <td class="zone">{{ infos_generales.trimestre }}</td>
+            <td class="label">Semaine N° :</td>
+            <td class="zone">{{ infos_generales.semaine }}</td>
+        </tr>
+        <tr>
+            <td class="label">Horaire :</td>
+            <td colspan="3" class="zone">{{ infos_generales.horaire }}</td>
+        </tr>
+    </table>
+
+    <!-- 2. PREAMBULE -->
+    <div class="section-titre">2. Préambule</div>
+
+    <table>
+        <tr>
+            <td class="label">Module N° :</td>
+            <td>{{ preambule.numero_module }}</td>
+            <td class="label">Titre du module :</td>
+            <td>{{ preambule.titre_module }}</td>
+        </tr>
+        <tr>
+            <td class="label">Famille de situations de vie :</td>
+            <td colspan="3" class="zone">{{ preambule.famille_situations }}</td>
+        </tr>
+        <tr>
+            <td class="label">Unité d’Apprentissage :</td>
+            <td colspan="3" class="zone">{{ preambule.unite_apprentissage }}</td>
+        </tr>
+        <tr>
+            <td class="label">Enoncé de la Compétence :</td>
+            <td colspan="3" class="zone-large">{{ preambule.competence }}</td>
+        </tr>
+        <tr>
+            <td class="label">Ordre dans la progression :</td>
+            <td>Leçon N° {{ preambule.numero_lecon }}</td>
+            <td class="label">Durée :</td>
+            <td>{{ preambule.duree }}</td>
+        </tr>
+        <tr>
+            <td class="label">Titre de la leçon :</td>
+            <td colspan="3">{{ preambule.titre_lecon }}</td>
+        </tr>
+        <tr>
+            <td class="label">Leçon digitalisée ?</td>
+            <td>OUI ☐</td>
+            <td>NON ☐</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="label">Type de leçon :</td>
+            <td>Théorie ☐</td>
+            <td>Pratique ☐</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="label">Vocabulaire spécifique :</td>
+            <td colspan="3" class="zone">{{ preambule.vocabulaire }}</td>
+        </tr>
+        <tr>
+            <td class="label">Objectif d’apprentissage :</td>
+            <td colspan="3" class="zone-large">{{ preambule.objectif }}</td>
+        </tr>
+        <tr>
+            <td class="label">Actions du programme mises en œuvre :</td>
+            <td colspan="3" class="zone-large">{{ preambule.actions_programme }}</td>
+        </tr>
+        <tr>
+            <td class="label">Matériel didactique :</td>
+            <td colspan="3" class="zone">{{ preambule.materiel }}</td>
+        </tr>
+        <tr>
+            <td class="label">Démarche pédagogique :</td>
+            <td colspan="3" class="zone-large">{{ preambule.demarches }}</td>
+        </tr>
+    </table>
+
+    <!-- SAUT DE PAGE -->
+<div class="page-break"></div>
+
+<!-- PAGE 2 -->
+<table>
+    <tr>
+        <td class="label" style="width: 25%;">Méthode pédagogique :</td>
+        <td style="height: 35px;">{{ situation_probleme.methode_pedagogique }}</td>
+    </tr>
+    <tr>
+        <td class="label">Prérequis :</td>
+        <td style="height: 35px;">{{ situation_probleme.prerequis }}</td>
+    </tr>
+    <tr>
+        <td class="label">Médiagraphie :</td>
+        <td style="height: 35px;">{{ situation_probleme.mediagraphie }}</td>
+    </tr>
+</table>
+
+<br>
+
+<table>
+    <tr>
+        <!-- Colonne verticale Situation problème -->
+       <td rowspan="3" style="width:5%; padding:0; text-align:center;">
+            <img src="situation_probleme.svg" style="height:100%; width:auto;">
+       </td>
+
+
+
+        <!-- Description -->
+        <td style="width: 95%;">
+            <span class="label">Description de la thématique/problème</span>
+            <div style="height: 120px;">
+                {{ situation_probleme.description }}
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <!-- Questions -->
+        <td>
+            <span class="label">Questions d’orientation/consignes</span>
+            <div style="height: 120px;">
+                {{ situation_probleme.consignes }}
+            </div>
+        </td>
+    </tr>
+
+    <tr>
+        <!-- Résultats attendus -->
+        <td>
+            <span class="label">Résultats attendus</span>
+            <div style="height: 120px;">
+                {{ situation_probleme.resultats_attendus }}
+            </div>
+        </td>
+    </tr>
+</table>
+
+
+<!-- SAUT DE PAGE -->
+<div class="page-break"></div>
+
+<!-- PAGE 3 -->
+<div class="section-titre">3. Déroulement de la leçon</div>
+
+<table>
+    <thead>
+        <tr>
+            <th style="width: 8%;">Étapes</th>
+            <th style="width: 7%;">Durée</th>
+            <th style="width: 10%;">OPI</th>
+            <th style="width: 18%;">Activités de l’enseignant</th>
+            <th style="width: 18%;">Activités de l’élève</th>
+            <th style="width: 12%;">Méthodes / Stratégies</th>
+            <th style="width: 8%;">Évaluation</th>
+            <th style="width: 10%;">Ressources</th>
+            <th style="width: 9%;">Observations</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        {% for ligne in deroulement %}
+        <tr>
+            <td style="height: 45px;">{{ ligne.etape }}</td>
+            <td>{{ ligne.duree }}</td>
+            <td>{{ ligne.opi }}</td>
+            <td>{{ ligne.taches_enseignant }}</td>
+            <td>{{ ligne.taches_eleve }}</td>
+            <td>{{ ligne.methodes }}</td>
+            <td>{{ ligne.evaluation }}</td>
+            <td>{{ ligne.ressources }}</td>
+            <td>{{ ligne.observations }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+<!-- SAUT DE PAGE -->
+<div class="page-break"></div>
+
+<!-- PAGE 4 -->
+<div class="section-titre">4. Évaluations et clôture</div>
+
+<table>
+    <tr>
+        <td class="label" style="width: 25%;">Évaluation d’application :</td>
+        <td style="height: 80px;">
+            {{ cloture.evaluation_application }}
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Évaluation d’intégration :</td>
+        <td style="height: 80px;">
+            {{ cloture.evaluation_integration }}
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Évaluation de transfert :</td>
+        <td style="height: 80px;">
+            {{ cloture.evaluation_transfert }}
+        </td>
+    </tr>
+
+    <tr>
+        <td class="label">Remédiation :</td>
+        <td style="height: 80px;">
+            {{ cloture.remediation }}
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<table>
+    <tr>
+        <td class="label" style="width: 50%;">Visa du Chef d’établissement</td>
+        <td class="label" style="width: 50%;">Visa de l’Enseignant</td>
+    </tr>
+    <tr>
+        <td style="height: 100px;"></td>
+        <td></td>
+    </tr>
+</table>
+
+
+</body>
+</html>

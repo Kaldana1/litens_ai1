@@ -1,0 +1,63 @@
+{
+    "infos_generales": {
+        "etablissement": "lycee general leclerc",
+        "classe": "Tle CD",
+        "discipline": "informatique",
+        "enseignant": "Kaldana ",
+        "trimestre": "2e",
+        "horaire": "2h"
+    },
+    "preambule": {
+        "titre_module": "",
+        "famille_situations": "",
+        "competence": "",
+        "titre_lecon": "",
+        "type": "Découverte"
+    },
+    "situation_probleme": {
+        "description": "Une situation concrète liée au module «  » est proposée afin d’amener les élèves à mobiliser la compétence visée.",
+        "consignes": "Observer la situation proposée, analyser les données fournies et proposer une solution en mobilisant les connaissances antérieures.",
+        "resultats_attendus": "Les élèves identifient correctement le problème posé et proposent des solutions cohérentes."
+    },
+    "deroulement": [
+        {
+            "etape": "Mise en situation",
+            "duree": "10 min",
+            "opi": "Suscter l’intérêt et identifier le problème",
+            "taches_enseignant": "Présente la situation-problème",
+            "taches_eleve": "Observe et analyse la situation",
+            "methodes": "Discussion dirigée",
+            "evaluation": "Observation",
+            "ressources": "Tableau, craie",
+            "observations": ""
+        },
+        {
+            "etape": "Construction des savoirs",
+            "duree": "25 min",
+            "opi": "Construire les notions",
+            "taches_enseignant": "Guide les échanges et explique",
+            "taches_eleve": "Participe et prend des notes",
+            "methodes": "Méthode active",
+            "evaluation": "Questions orales",
+            "ressources": "Support de cours",
+            "observations": ""
+        },
+        {
+            "etape": "Application",
+            "duree": "15 min",
+            "opi": "Appliquer les acquis",
+            "taches_enseignant": "Propose des exercices",
+            "taches_eleve": "Résout les exercices",
+            "methodes": "Travail individuel",
+            "evaluation": "Exercices corrigés",
+            "ressources": "Cahiers",
+            "observations": ""
+        }
+    ],
+    "cloture": {
+        "evaluation_application": "Exercices d’application immédiate.",
+        "evaluation_integration": "Résolution d’une situation intégratrice.",
+        "evaluation_transfert": "Réinvestissement dans un autre contexte.",
+        "remediation": "Reprise des notions non maîtrisées."
+    }
+}

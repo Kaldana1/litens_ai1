@@ -1,0 +1,17 @@
+{
+    "infos_generales": {
+        "etablissement": "lycee general leclerc",
+        "classe": "Tle CD",
+        "discipline": "informatique",
+        "enseignant": "Kaldana ",
+        "trimestre": "2e",
+        "horaire": "2h"
+    },
+    "preambule": {
+        "titre_module": "",
+        "famille_situations": "",
+        "competence": "",
+        "titre_lecon": "",
+        "type": "Découverte"
+    }
+}
